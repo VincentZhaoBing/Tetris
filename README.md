@@ -61,6 +61,42 @@ Then open `http://localhost:8080` in your browser.
     └── ui.js           # Score panels, next/hold previews, pause overlay
 ```
 
+## Finding Trending GitHub Projects
+
+Looking for hot / trending repos on GitHub? Here are a few ways:
+
+### 1. GitHub Trending (quickest)
+
+**Direct URL:** <https://github.com/trending>
+
+If you prefer to navigate manually in the GitHub UI:
+
+1. Go to <https://github.com> and sign in.
+2. On the left sidebar (or the hamburger menu on smaller screens) click **Explore**.
+3. Choose the **Trending** tab, or go directly to <https://github.com/trending>.
+4. Filter by **time range** (Today / This week / This month) and/or **language** (Python, JavaScript, Rust, …).
+
+> **Note:** GitHub periodically updates its navigation. If you can't find the Trending link in the sidebar, use the direct URL above – it always works.
+
+### 2. GitHub Search (most flexible)
+
+Switch the search scope to **Repositories** and combine filters:
+
+| Goal | Search query example |
+|------|----------------------|
+| Repos created in the last 30 days with 500+ stars | `created:>2026-03-08 stars:>500` |
+| Recently pushed, very popular repos | `pushed:>2026-03-31 stars:>5000` |
+| Trending TypeScript projects this month | `language:TypeScript pushed:>2026-03-08 stars:>2000` |
+| AI / LLM topic, active repos | `topic:llm pushed:>2026-03-01 stars:>500 archived:false` |
+
+You can append more filters such as `forks:>N`, `topic:kubernetes`, or `language:Go`.
+
+### 3. Explore page
+
+Visit <https://github.com/explore> for curated collections, topics, and trending repositories hand-picked by GitHub.
+
+---
+
 ## Tech Stack
 
 - **[PixiJS 7](https://pixijs.com/)** – WebGL 2D rendering engine (via CDN)
